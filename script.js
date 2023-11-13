@@ -1,12 +1,13 @@
 var Starter = document.getElementById('Starter');
-var Stopper = document.getElementById('Stopper'); 
+var Stopper = document.getElementById('Stopper');
 var WaitStart = document.getElementById('WaitStart');
 var WaitStop = document.getElementById('WaitStop');
+var Reset = document.getElementById('Reset');
 
 var startTime;
 var endTime;
-var waitelapsedFormattedTime
-
+var waitelapsedFormattedTime = 0; // Initialize wait time to zero
+var stored = 0;
 var waitStartTime;
 var waitStopTime;
 
@@ -23,7 +24,7 @@ Starter.addEventListener('click', function () {
 
     // Display or use the extracted time as needed
     var startFormattedTime = hours + ':' + minutes + ':' + seconds;
-    
+
     window.alert("Recording started");
 });
 
@@ -48,12 +49,24 @@ Stopper.addEventListener('click', function () {
 
     var elapsedFormattedTime = elapsedHours + ':' + elapsedMinutes + ':' + elapsedSeconds;
 
-    Stopper.innerHTML = `Total working hours ${elapsedFormattedTime} and waiting time ${waitelapsedFormattedTime}`;
+    Stopper.innerHTML = `Total working hours ${elapsedFormattedTime} and waiting time ${stored}`;
     console.log('Elapsed Time:', elapsedFormattedTime);
 });
 
 WaitStart.addEventListener('click', function () {
     WaitStop.style.display = 'inline-block';
+
+    if (waitStartTime) {
+        // If waitStartTime exists, calculate the time elapsed and add it to waitelapsedFormattedTime
+        var waittimeDifference = new Date().getTime() - waitStartTime.getTime();
+        var waitelapsedTime = new Date(waittimeDifference);
+        var waitelapsedHours = waitelapsedTime.getUTCHours();
+        var waitelapsedMinutes = waitelapsedTime.getUTCMinutes();
+        var waitelapsedSeconds = waitelapsedTime.getUTCSeconds();
+
+        waitelapsedFormattedTime += waitelapsedHours * 3600 + waitelapsedMinutes * 60 + waitelapsedSeconds;
+    }
+
     // Record the start time
     waitStartTime = new Date();
     // You can use the startTime variable for further processing or storage
@@ -63,9 +76,16 @@ WaitStart.addEventListener('click', function () {
 
     // Display or use the extracted time as needed
     var waitstartFormattedTime = hours + ':' + minutes + ':' + seconds;
-    window.alert("Waiting time started")
-    
+    window.alert("Waiting time started");
 });
+
+function formatTime(hours, minutes, seconds) {
+    return (
+        (hours < 10 ? '0' : '') + hours + ':' +
+        (minutes < 10 ? '0' : '') + minutes + ':' +
+        (seconds < 10 ? '0' : '') + seconds
+    );
+}
 
 WaitStop.addEventListener('click', function () {
     // Record the start time
@@ -86,7 +106,7 @@ WaitStop.addEventListener('click', function () {
     var waitelapsedMinutes = waitelapsedTime.getUTCMinutes();
     var waitelapsedSeconds = waitelapsedTime.getUTCSeconds();
 
-    waitelapsedFormattedTime = waitelapsedHours + ':' + waitelapsedMinutes + ':' + waitelapsedSeconds;
+    waitelapsedFormattedTime += waitelapsedHours * 3600 + waitelapsedMinutes * 60 + waitelapsedSeconds;
 
-    console.log('WaitElapsed Time:', waitelapsedFormattedTime);
+    stored = ('WaitElapsed Time:', formatTime(waitelapsedHours, waitelapsedMinutes, waitelapsedSeconds));
 });
