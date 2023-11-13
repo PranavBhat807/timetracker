@@ -1,0 +1,266 @@
+html, body {
+    top: 0;
+    bottom: 0;
+    background-color: rgb(238, 149, 164);
+
+}
+
+.Heading {
+    position: absolute;
+    left: 35%;
+    color: antiquewhite;
+    font-weight: 600;
+}
+
+
+/* Starter code starts */
+button {
+    position: absolute;
+    outline: none;
+    color: #6d81da;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 2px dashed #DAA06D;
+    border-radius: 15px;
+    background-color: #EADDCA;
+    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .1s ease-in-out, .4s color;
+    top: 15%;
+    left: 16%;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 720px) 
+ {
+    .Heading {
+        position: absolute;
+        left: 28%;
+    }
+
+    button {
+        position: absolute;
+        outline: none;
+        color: #6d81da;
+        padding: 0.2em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        border: 2px dashed #DAA06D;
+        border-radius: 15px;
+        background-color: #EADDCA;
+        box-shadow: 0 0 0 2px #EADDCA, 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+        transition: .1s ease-in-out, .4s color;
+        top: 14%;
+        left: 8%;
+        font-size: 11px;
+        font-weight: 100;
+    }    
+}
+
+@media screen and (max-width: 280px) {
+    button {
+        position: absolute;
+        outline: none;
+        color: #6d81da;
+        padding: 0.2em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        border: 2px dashed #DAA06D;
+        border-radius: 15px;
+        background-color: #EADDCA;
+        box-shadow: 0 0 0 2px #EADDCA, 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+        transition: .1s ease-in-out, .4s color;
+        top: 22%;
+        left: 8%;
+        font-size: 11px;
+        font-weight: 100;
+    }
+}
+/* Started codes end */
+
+
+/* Stopper code starts */
+.Stopper {
+    position: absolute;
+    outline: none;
+    color: #6d81da;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 2px dashed #DAA06D;
+    border-radius: 15px;
+    background-color: #EADDCA;
+    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .1s ease-in-out, .4s color;
+    top: 15%;
+    left: 70%;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 720px) 
+ {
+
+    .Stopper {
+        position: absolute;
+        outline: none;
+        color: #6d81da;
+        padding: 0.2em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        border: 2px dashed #DAA06D;
+        border-radius: 15px;
+        background-color: #EADDCA;
+        box-shadow: 0 0 0 2px #EADDCA, 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+        transition: .1s ease-in-out, .4s color;
+        top: 14%;
+        left: 73%;
+        font-size: 11px;
+        font-weight: 100;
+    }    
+}
+
+@media screen and (max-width: 280px) {
+    .Stopper {
+        position: absolute;
+        outline: none;
+        color: #6d81da;
+        padding: 0.2em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        border: 2px dashed #DAA06D;
+        border-radius: 15px;
+        background-color: #EADDCA;
+        box-shadow: 0 0 0 2px #EADDCA, 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+        transition: .1s ease-in-out, .4s color;
+        top: 22%;
+        left: 73%;
+        font-size: 11px;
+        font-weight: 100;
+    }
+}
+/* Stopper code ends */
+
+
+.WaitStart {
+    position: absolute;
+    outline: none;
+    color: #6d81da;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 2px dashed #DAA06D;
+    border-radius: 15px;
+    background-color: #EADDCA;
+    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .1s ease-in-out, .4s color;
+    top: 35%;
+    left: 30%;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 720px) 
+ {
+
+    .WaitStart {
+        position: absolute;
+        outline: none;
+        color: #6d81da;
+        padding: 0.2em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        border: 2px dashed #DAA06D;
+        border-radius: 15px;
+        background-color: #EADDCA;
+        box-shadow: 0 0 0 2px #EADDCA, 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+        transition: .1s ease-in-out, .4s color;
+        top: 28%;
+        left: 35%;
+        font-size: 11px;
+        font-weight: 100;
+    }    
+}
+
+@media screen and (max-width: 280px) {
+    .WaitStart {
+        position: absolute;
+        outline: none;
+        color: #6d81da;
+        padding: 0.2em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        border: 2px dashed #DAA06D;
+        border-radius: 15px;
+        background-color: #EADDCA;
+        box-shadow: 0 0 0 2px #EADDCA, 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+        transition: .1s ease-in-out, .4s color;
+        top: 36%;
+        left: 61%;
+        font-size: 11px;
+        font-weight: 100;
+    }
+}
+
+.WaitStop {
+    position: absolute;
+    outline: none;
+    color: #6d81da;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 2px dashed #DAA06D;
+    border-radius: 15px;
+    background-color: #EADDCA;
+    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .1s ease-in-out, .4s color;
+    top: 52%;
+    left: 30%;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 720px) 
+ {
+
+    .WaitStop {
+        position: absolute;
+        outline: none;
+        color: #6d81da;
+        padding: 0.2em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        border: 2px dashed #DAA06D;
+        border-radius: 15px;
+        background-color: #EADDCA;
+        box-shadow: 0 0 0 2px #EADDCA, 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+        transition: .1s ease-in-out, .4s color;
+        top: 38%;
+        left: 35%;
+        font-size: 11px;
+        font-weight: 100;
+    }    
+}
+
+@media screen and (max-width: 280px) {
+    .WaitStop {
+        position: absolute;
+        outline: none;
+        color: #6d81da;
+        padding: 0.2em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        border: 2px dashed #DAA06D;
+        border-radius: 15px;
+        background-color: #EADDCA;
+        box-shadow: 0 0 0 2px #EADDCA, 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+        transition: .1s ease-in-out, .4s color;
+        top: 38%;
+        left: 61%;
+        font-size: 11px;
+        font-weight: 100;
+    }
+}
+
+/* Wait code ends here */
